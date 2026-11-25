@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Game</title>
+  <!-- Google Font Link Start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Google Font Link End -->
+  <!-- CSS Link Start -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS Link End -->
+
+</head>
+
+<body>
+  <!-- Player1 Name -->
+  <div class="gameScreen" id="startScreen">
+    <h1 class="mainText">Wanna Play game?</h1>
+    <input id="nameInput" class="inputText" type="text" placeholder="What is your name">
+    <button id="startGameBtn" class="mainBtn">Start Game</button>
+    <p id="errorMsg" class="error" hidden>Name Is Missing</p>
+  </div>
+
+  <!-- Player1 Number -->
+  <div class="gameScreen" id="playerOne" hidden>
+    <h1 class="mainText" id="playerOneTittle"></h1>
+    <input id="playerOneInput" class="inputText" type="number" placeholder="Give a number">
+    <button id="playerOneBtn" class="mainBtn">Let’s Play</button>
+    <p id="playerOneError" class="error" hidden>Please give a number</p>
+  </div>
+
+  <!-- Player2 Name -->
+  <div class="gameScreen" id="playerTwoName" hidden>
+    <h1 class="mainText">Player - 2 Name</h1>
+    <input id="playerTwoNameInput" class="inputText" type="text" placeholder="What is your name">
+    <button id="playerTwoNameBtn" class="mainBtn">Start Game</button>
+    <p id="playerTwoNameError" class="error" hidden>Name Is Missing</p>
+  </div>
+
+  <!-- Player2 Number -->
+  <div class="gameScreen" id="playerTwo" hidden>
+    <h1 class="mainText" id="playerTwoTittle">Player - 2</h1>
+    <input id="playerTwoInput" class="inputText" type="number" placeholder="Guess a number">
+    <button id="playerTwoBtn" class="mainBtn">Guess</button>
+    <p id="playerTwoError" class="error" hidden>Please give a number</p>
+  </div>
+
+  <!-- Game Result -->
+  <div class="gameScreen" id="gameOver" hidden>
+    <h1 class="mainText" id="gameOverTittle"></h1>
+  </div>
+
+  <!-- JS Link Start -->
+  <script src="js/script.js"></script>
+  <!-- JS Link End -->
+</body>
+
+</html>
